@@ -75,10 +75,16 @@ python main.py
 Ingresar por: http://localhost:8000/docs
 Login (Autorize) admin:password
 
-![Alt text](/fotos/Screenshot_1.png?raw=true)
+![Alt text](/docs_fotos/api/Screenshot_1.png?raw=true)
+![Alt text](/docs_fotos/api/Screenshot_2.png?raw=true)
+![Alt text](/docs_fotos/api/Screenshot_3.png?raw=true)
+![Alt text](/docs_fotos/api/Screenshot_4.png?raw=true)
 
 # Comando para realizar pruebas, no se necesita que esté corriendo el API
 pytest -s # -s es para imprimir las salidas de la funcion print
+
+![Alt text](/docs_fotos/pytest/Screenshot_1.png?raw=true)
+![Alt text](/docs_fotos/pytest/Screenshot_2.png?raw=true)
 
 # Coverage
 ### https://coverage.readthedocs.io/en/6.4.4/
@@ -95,3 +101,11 @@ se crea el archivo .coverage
 coverage html
 
 Revisar resultados en la carpeta htmlcov
+
+![Alt text](/docs_fotos/coverage/Screenshot_1.png?raw=true)
+![Alt text](/docs_fotos/coverage/Screenshot_2.png?raw=true)
+![Alt text](/docs_fotos/coverage/Screenshot_3.png?raw=true)
+![Alt text](/docs_fotos/coverage/Screenshot_4.png?raw=true)
+![Alt text](/docs_fotos/coverage/Screenshot_5.png?raw=true)
+![Alt text](/docs_fotos/coverage/Screenshot_6.png?raw=true)
+
