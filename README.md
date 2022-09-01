@@ -75,6 +75,8 @@ python main.py
 Ingresar por: http://localhost:8000/docs
 Login (Autorize) admin:password
 
+![Alt text](/fotos/Screenshot_1.png?raw=true)
+
 # Comando para realizar pruebas, no se necesita que esté corriendo el API
 pytest -s # -s es para imprimir las salidas de la funcion print
 
