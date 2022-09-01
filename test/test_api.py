@@ -5,6 +5,9 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 ################################################
+# TEST en SQLite para no impactar la base de datos de producción
+
+################################################
 # Importar los archivos del directorio principal
 sys.path.append(os.path.join(os.path.dirname(__file__),'../'))
 

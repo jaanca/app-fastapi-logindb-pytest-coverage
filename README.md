@@ -45,36 +45,28 @@ pipenv shell
 pip install -r requirements.txt
 pipenv graph
 
-# Correr Api
-python main.py
+# Alistar la base de datos inicialmente
+Configurar las variables de entorno para la base de datos .env obtener el nombre de la base de datos
+Para el ejemplo tenemos un motor postgres instalado en localhost
+CONN_POSTGRES_DB='fastapi_database'
+Ejecutar en postgres: create database fastapi_database;
 
-### Crear proyecto de migración alembic (Si se realiza desde cero, para el proyecto las configuraciones ya fueron realizadas)
+# Preparar alembic para crear todas las tablas e inicializar las versiones db.create_all()
+alembic stamp head
 
-alembic init migrations
-
-# alembic.ini    
-Eliminar del alembic.ini, el contenido de la variable de conexión de base de datos sqlalchemy.url = xxx
-se configura el migrations/env.py para asignar la conexión sqlalchemy.url = xxx
-
-# migrations/env.py
-from core.config import settings
-# Cargar las variables de entorno
-config.set_main_option('sqlalchemy.url',settings.DATABASE_URL)
-
-# add your model's MetaData object here
-# for 'autogenerate' support
-from app.db.models import Base
-target_metadata = Base.metadata
-# target_metadata = None
-
-
-### Realizar migraciones (Se realiza por cada cambio en los modelos)
-
-# Crear/actalizar estructura de modelos y dejar un mensaje de commit
-alembic revision --autogenerate -m "Crear modelos"
+# Crear/actualizar estructura de modelos y dejar un mensaje de commit
+alembic revision --autogenerate -m "Inicializar modelos"
 
 # Actualizar estructura existente en la base de datos (Agregar/Editar objetos)
 alembic upgrade heads
+
+# Crear usuario inicial para login
+python user_create_init.py
+
+### Ya se puede iniciar el Api
+python main.py
+Ingresar por: http://localhost:8000/docs
+Login (Autorize) admin:password
 
 ### Realizar pruebas
 # -s es para imprimir las salidas de la funcion print
