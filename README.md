@@ -1,8 +1,8 @@
 ### Descripción de los archivos
     .
-	|-- arm/ Definición Continuous Deployment CD en Azure DevOps
-	|	|-- scripts/ Comandos para Deployment
-	|	|-- templates/ Plantillas ARM - Azure Resource Manager en formato JSON
+	|-- arm/                            # Definición Continuous Deployment CD en Azure DevOps
+	|	|-- scripts/                    # Comandos para Deployment
+	|	|-- templates/                  # Plantillas ARM - Azure Resource Manager en formato JSON
 	|-- app/ Carpeta principal del API
 	|	|-- common/ Librerias/Clases/Funciones/Constantes/Mensajes de plataforma
 	|	|	|-- hashig.py Funciones para encriptación con métodos hash
