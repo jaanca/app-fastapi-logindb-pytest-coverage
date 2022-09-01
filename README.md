@@ -47,32 +47,48 @@
 pipenv install
 ```
 ### Correr entorno virtual
+```console
 pipenv shell
+```
 
 ### Instalar requerimientos
+```console
 pip install -r requirements.txt
 pipenv graph
+```
 
 ## Alistar la base de datos inicialmente
 Configurar las variables de entorno para la base de datos .env obtener el nombre de la base de datos
 Para el ejemplo tenemos un motor postgres instalado en localhost
 CONN_POSTGRES_DB='fastapi_database'
+```console
 Ejecutar en postgres: create database fastapi_database;
+```
 
 ### Preparar alembic para crear todas las tablas e inicializar las versiones db.create_all()
+```console
 alembic stamp head
+```
 
 ### Crear/actualizar estructura de modelos y dejar un mensaje de commit
+```console
 alembic revision --autogenerate -m "Inicializar modelos"
+```
 
 ### Actualizar estructura existente en la base de datos (Agregar/Editar objetos)
+```console
 alembic upgrade heads
+```
 
 ### Crear usuario inicial para login
+```console
 python user_create_init.py
+```
 
 # Ya se puede iniciar el Api
+```console
 python main.py
+```
 Ingresar por: http://localhost:8000/docs
 Login (Autorize) admin:password
 
@@ -82,7 +98,10 @@ Login (Autorize) admin:password
 ![Alt text](/docs_fotos/api/Screenshot_4.png?raw=true)
 
 # Comando para realizar pruebas, no se necesita que esté corriendo el API
-pytest -s # -s es para imprimir las salidas de la funcion print
+```console
+# -s es para imprimir las salidas de la funcion print
+pytest -s
+```
 
 ![Alt text](/docs_fotos/pytest/Screenshot_1.png?raw=true)
 ![Alt text](/docs_fotos/pytest/Screenshot_2.png?raw=true)
@@ -95,11 +114,15 @@ La medición de cobertura se usa típicamente para medir la efectividad de las p
 Puede mostrar qué partes de su código están siendo ejercitadas por pruebas y cuáles no.
 
 ## Comando
+```console
 coverage run -m pytest
+```
 se crea el archivo .coverage
 
 ## Generar coverage en html
+```console
 coverage html
+```
 
 Revisar resultados en la carpeta htmlcov
 
