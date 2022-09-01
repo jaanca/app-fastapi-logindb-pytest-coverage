@@ -9,8 +9,8 @@
     |   |   |-- oauth.py                # Funciones para interactuar con métodos oauth
     |   |   |-- jwt.py                  # Funciones para interactuar con el estándard JWT (JSON Web Token)
     |   |-- core/                       # Definición de configuraciones base
-    |	|   |--	config.py				# Definición de variables de ambiente como carga de variables de ambientes
-    |	|--	db/							# Definición conexiones a bases de datos y modelos - (Simil .Net DAL Data Access Layer)
+    |	|   |-- config.py               # Definición de variables de ambiente como carga de variables de ambientes
+    |	|-- db/                         # Definición conexiones a bases de datos y modelos - (Simil .Net DAL Data Access Layer)
     |	|   |--	conn_postgres.py		# Clase para conectar a la base de datos y su motor respectivo
     |	|   |--	models.py				# Definición de modelos de base de datos para interactuar con el ORM (Object Relational Mapping)
     |	|   |--	querys.py				# Querys de consulta a base de datos
