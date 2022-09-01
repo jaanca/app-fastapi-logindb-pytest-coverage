@@ -1,14 +1,14 @@
 ### Descripción de los archivos
     .
-	|--	arm/							# Definición Continuous Deployment CD en Azure DevOps
-	|	|--	scripts/					# Comandos para Deployment
-	|	|--	templates/					# Plantillas ARM - Azure Resource Manager en formato JSON
-	|--	app/							# Carpeta principal del API
-	|	|--	common/						# Librerias/Clases/Funciones/Constantes/Mensajes de plataforma
-	|	|	|--	hashig.py				# Funciones para encriptación con métodos hash
-	|	|	|--	oauth.py				# Funciones para interactuar con métodos oauth
-	|	|	|--	jwt.py					# Funciones para interactuar con el estándard JWT (JSON Web Token)
-	|	|--	core/						# Definición de configuraciones base
+	|-- arm/                            # Definición Continuous Deployment CD en Azure DevOps
+	|	|-- scripts/                    # Comandos para Deployment
+	|	|-- templates/                  # Plantillas ARM - Azure Resource Manager en formato JSON
+	|-- app/                            # Carpeta principal del API
+	|	|-- common/                     # Librerias/Clases/Funciones/Constantes/Mensajes de plataforma
+	|	|	|-- hashig.py               # Funciones para encriptación con métodos hash
+	|	|	|-- oauth.py                # Funciones para interactuar con métodos oauth
+	|	|	|-- jwt.py                  # Funciones para interactuar con el estándard JWT (JSON Web Token)
+	|	|-- core/                       # Definición de configuraciones base
 	|	|	|--	config.py				# Definición de variables de ambiente como carga de variables de ambientes
 	|	|--	db/							# Definición conexiones a bases de datos y modelos - (Simil .Net DAL Data Access Layer)
 	|	|	|--	conn_postgres.py		# Clase para conectar a la base de datos y su motor respectivo
