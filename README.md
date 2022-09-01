@@ -43,8 +43,9 @@
 # Preparar ambiente
 
 ### Activar entorno virtual
+```console
 pipenv install
-
+```
 ### Correr entorno virtual
 pipenv shell
 
