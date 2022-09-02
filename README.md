@@ -99,7 +99,9 @@ Login (Autorize) admin:password
 ![Alt text](/docs_fotos/03.api/Screenshot_3.png?raw=true)
 ![Alt text](/docs_fotos/03.api/Screenshot_4.png?raw=true)
 
-# Comando para realizar pruebas, no se necesita que esté corriendo el API
+# Comando para realizar pruebas, se necesita que esté corriendo el API
+
+Ejecutar en otra consola las pruebas
 ```console
 # -s es para imprimir las salidas de la funcion print
 pytest -s
