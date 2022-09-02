@@ -64,6 +64,7 @@ CONN_POSTGRES_DB='fastapi_database'
 ```console
 Ejecutar en postgres: create database fastapi_database;
 ```
+![Alt text](/docs_fotos/01.createdb/Screenshot_1.png?raw=true)
 
 ### Preparar alembic para crear todas las tablas e inicializar las versiones db.create_all()
 ```console
@@ -84,6 +85,7 @@ alembic upgrade heads
 ```console
 python user_create_init.py
 ```
+![Alt text](/docs_fotos/02.init_user/Screenshot_1.png?raw=true)
 
 # Ya se puede iniciar el Api
 ```console
@@ -92,10 +94,10 @@ python main.py
 Ingresar por: http://localhost:8000/docs
 Login (Autorize) admin:password
 
-![Alt text](/docs_fotos/api/Screenshot_1.png?raw=true)
-![Alt text](/docs_fotos/api/Screenshot_2.png?raw=true)
-![Alt text](/docs_fotos/api/Screenshot_3.png?raw=true)
-![Alt text](/docs_fotos/api/Screenshot_4.png?raw=true)
+![Alt text](/docs_fotos/03.api/Screenshot_1.png?raw=true)
+![Alt text](/docs_fotos/03.api/Screenshot_2.png?raw=true)
+![Alt text](/docs_fotos/03.api/Screenshot_3.png?raw=true)
+![Alt text](/docs_fotos/03.api/Screenshot_4.png?raw=true)
 
 # Comando para realizar pruebas, no se necesita que esté corriendo el API
 ```console
@@ -103,8 +105,8 @@ Login (Autorize) admin:password
 pytest -s
 ```
 
-![Alt text](/docs_fotos/pytest/Screenshot_1.png?raw=true)
-![Alt text](/docs_fotos/pytest/Screenshot_2.png?raw=true)
+![Alt text](/docs_fotos/04.pytest/Screenshot_1.png?raw=true)
+![Alt text](/docs_fotos/04.pytest/Screenshot_2.png?raw=true)
 
 # Coverage
 ### https://coverage.readthedocs.io/en/6.4.4/
@@ -126,10 +128,10 @@ coverage html
 
 Revisar resultados en la carpeta htmlcov
 
-![Alt text](/docs_fotos/coverage/Screenshot_1.png?raw=true)
-![Alt text](/docs_fotos/coverage/Screenshot_2.png?raw=true)
-![Alt text](/docs_fotos/coverage/Screenshot_3.png?raw=true)
-![Alt text](/docs_fotos/coverage/Screenshot_4.png?raw=true)
-![Alt text](/docs_fotos/coverage/Screenshot_5.png?raw=true)
-![Alt text](/docs_fotos/coverage/Screenshot_6.png?raw=true)
+![Alt text](/docs_fotos/05.coverage/Screenshot_1.png?raw=true)
+![Alt text](/docs_fotos/05.coverage/Screenshot_2.png?raw=true)
+![Alt text](/docs_fotos/05.coverage/Screenshot_3.png?raw=true)
+![Alt text](/docs_fotos/05.coverage/Screenshot_4.png?raw=true)
+![Alt text](/docs_fotos/05.coverage/Screenshot_5.png?raw=true)
+![Alt text](/docs_fotos/05.coverage/Screenshot_6.png?raw=true)
 
