@@ -91,6 +91,9 @@ python user_create_init.py
 ```console
 python main.py
 ```
+
+![Alt text](/docs_fotos/03.api/Screenshot_1.png?raw=true)
+
 Ingresar por: http://localhost:8000/docs
 Login (Autorize) admin:password
 
@@ -98,6 +101,7 @@ Login (Autorize) admin:password
 ![Alt text](/docs_fotos/03.api/Screenshot_2.png?raw=true)
 ![Alt text](/docs_fotos/03.api/Screenshot_3.png?raw=true)
 ![Alt text](/docs_fotos/03.api/Screenshot_4.png?raw=true)
+![Alt text](/docs_fotos/03.api/Screenshot_5.png?raw=true)
 
 # Comando para realizar pruebas, se necesita que esté corriendo el API
 
