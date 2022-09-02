@@ -97,7 +97,6 @@ python main.py
 Ingresar por: http://localhost:8000/docs
 Login (Autorize) admin:password
 
-![Alt text](/docs_fotos/03.api/Screenshot_1.png?raw=true)
 ![Alt text](/docs_fotos/03.api/Screenshot_2.png?raw=true)
 ![Alt text](/docs_fotos/03.api/Screenshot_3.png?raw=true)
 ![Alt text](/docs_fotos/03.api/Screenshot_4.png?raw=true)
