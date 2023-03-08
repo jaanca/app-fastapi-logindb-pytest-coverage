@@ -20,7 +20,7 @@
     |   |   |-- conn_postgres.py        # Clase para conectar a la base de datos y su motor respectivo
     |   |   |-- models.py               # Definición de modelos de base de datos para interactuar con el ORM (Object Relational Mapping)
     |   |   |-- querys.py               # Querys de consulta a base de datos
-    |   |-- repository/                 # Layer Controlador/Logica del negocio - (Simil .Net BLL / Business Logic sin conexión a Datos)
+    |   |-- services/                   # Layer Controlador/Logica del negocio - (Simil .Net BLL / Business Logic sin conexión a Datos)
     |   |   |-- auth.py                 # Reglas de autenticación
     |   |   |-- user.py                 # Reglas para interactuar con las conexiones de las bases de datos
     |   |-- routers/                    # Definición Vistas / Enrutamiento a métodos get/post (Capa de controladores - Expuesta al cliente por postman)
@@ -54,6 +54,9 @@ pipenv shell
 ### Instalar requerimientos
 ```console
 pip install -r requirements.txt
+o 
+python -m pip install -r requirements.txt
+
 pipenv graph
 ```
 
@@ -69,16 +72,22 @@ Ejecutar en postgres: create database fastapi_database;
 ### Preparar alembic para crear todas las tablas e inicializar las versiones db.create_all()
 ```console
 alembic stamp head
+o
+python -m alembic stamp head
 ```
 
 ### Crear/actualizar estructura de modelos y dejar un mensaje de commit
 ```console
 alembic revision --autogenerate -m "Inicializar modelos"
+o
+python -m alembic revision --autogenerate -m "Inicializar modelos"
 ```
 
 ### Actualizar estructura existente en la base de datos (Agregar/Editar objetos)
 ```console
 alembic upgrade heads
+o
+python -m alembic upgrade heads
 ```
 
 ### Crear usuario inicial para login
