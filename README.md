@@ -42,21 +42,32 @@
 
 # Preparar ambiente
 
-### Activar entorno virtual
+### Notación de los comandos siguientes
 ```console
-pipenv install
+# Si no se ha activado el entorno virtual, se necesita el comando de acuerdo al sistema operativo
+comando linux
+o
+comando windows
 ```
+
 ### Correr entorno virtual
+En el archivo Pipfile se encuentra la versión a ejecutar
+[requires]
+python_version = "3.9"
+
 ```console
 pipenv shell
+o
+python -m pipenv shell
 ```
 
 ### Instalar requerimientos
 ```console
 pip install -r requirements.txt
-o 
-python -m pip install -r requirements.txt
+```
 
+### Revisar requerimientos
+```console
 pipenv graph
 ```
 
@@ -65,29 +76,24 @@ Configurar las variables de entorno para la base de datos .env obtener el nombre
 Para el ejemplo tenemos un motor postgres instalado en localhost
 CONN_POSTGRES_DB='fastapi_database'
 ```console
-Ejecutar en postgres: create database fastapi_database;
+# Ejecutar en postgres
+# create database fastapi_database;
 ```
 ![Alt text](/docs_fotos/01.createdb/Screenshot_1.png?raw=true)
 
 ### Preparar alembic para crear todas las tablas e inicializar las versiones db.create_all()
 ```console
 alembic stamp head
-o
-python -m alembic stamp head
 ```
 
 ### Crear/actualizar estructura de modelos y dejar un mensaje de commit
 ```console
 alembic revision --autogenerate -m "Inicializar modelos"
-o
-python -m alembic revision --autogenerate -m "Inicializar modelos"
 ```
 
 ### Actualizar estructura existente en la base de datos (Agregar/Editar objetos)
 ```console
 alembic upgrade heads
-o
-python -m alembic upgrade heads
 ```
 
 ### Crear usuario inicial para login
